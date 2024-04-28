@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import backgroundImage from '../assets/patricia-jekki-k4_sxnhj1c0-unsplash.jpg';
+import backgroundImage from '../assets/banner-3.jpg';
 import {FaEye, FaEyeSlash} from 'react-icons/fa';
 
 import { toast } from 'react-toastify';

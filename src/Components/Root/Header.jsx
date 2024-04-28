@@ -49,7 +49,7 @@ const Header = () => {
     <a className={`btn btn-ghost gap-0 text-xl ${navbarHeading} font-ubuntu  md:text-3xl font-bold`}>Journey<span className="text-[#FC4100]">SEA</span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 gap-2 ">
+    <ul className="menu menu-horizontal px-1 gap-5 ">
     {
     navlinks
   }
@@ -60,7 +60,7 @@ const Header = () => {
 {/* theme change */}
 
 {
-      user? <div className="flex items-center gap-5">
+      user? <div className="flex items-center gap-1">
         <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full my-anchor-element ">
@@ -80,8 +80,7 @@ const Header = () => {
           </a>
         </li >
         <li className={` hover:rounded-xl text-black hover:bg-[#86469C] hover:text-white font-raleway fon-bold`}><a className="mb-2">{user?.email || 'user email not found'}</a></li>
-        <li onClick={logOut}  className={`font-raleway hover:rounded-lg mb-3 font-bold p-3  hover:bg-[#FC4100]  text-black hover:text-white`}>{}LogOut</li>
-      
+       
       </ul>
     </div>
     {/* <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar hover:tooltip hover:tooltip-open hover:tooltip-bottom" data-tip={user?.displayName||'user name not found'}>
@@ -91,7 +90,20 @@ const Header = () => {
         </div>
        
       </div> */}
+     <div className="dropdown dropdown-end ml-2">
+      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+          <button className="h-full w-full">
+            <PiDotsThreeCircleVerticalFill className={`h-full w-full ${navbarHeading}`}></PiDotsThreeCircleVerticalFill>
+          </button>
+        </div>
+      </div>
+      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+      <li onClick={logOut}  className={`font-raleway hover:rounded-lg mb-3 font-bold p-3  hover:bg-[#FC4100]  ${navbarClass} hover:text-white`}>{}LogOut</li>
+      
      
+      </ul>
+    </div>
       </div>:
     
   <div className="dropdown dropdown-end ml-2">

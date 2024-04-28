@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './Components/Root/Root.jsx';
-import Home from './Pages/Home.jsx';
+import Home from './Pages/Home/Home.jsx';
 import Error from './Components/Error/Error.jsx';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute.jsx';
 import Login from './Pages/Login.jsx';

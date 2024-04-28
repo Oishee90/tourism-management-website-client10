@@ -1,5 +1,5 @@
 
-import backgroundImage from '../assets/mesut-kaya-eOcyhe5-9sQ-unsplash.jpg';
+import backgroundImage from '../assets/banner-1.jpg';
 import { Link } from "react-router-dom";
 import { FaEye,FaEyeSlash} from 'react-icons/fa';
 
