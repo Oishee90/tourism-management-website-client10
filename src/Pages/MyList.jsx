@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import UseAuth from "../Components/hook/UseAuth";
+import { Link } from "react-router-dom";
 
 
 const MyList = () => {
@@ -39,9 +40,9 @@ const MyList = () => {
                             <td className="border  font-raleway font-bold hover:bg-purple-200 border-gray-300 px-4 py-2">{item.travel_time}</td>
                             <td className="border  font-raleway font-bold hover:bg-purple-200 border-gray-300 px-4 py-2">{item.average_cost}</td>
                             <td className="border  font-raleway font-bold border-gray-300 px-4 py-2 flex justify-between space-x-2">
-                                <button className="transition duration-1000 ease-in  cursor-pointer bg-[#5f2d70de]  hover:bg-[#4d205c] font-ubuntu text-white font-bold py-2 px-4 rounded">
+                                <Link to={`/update/${item._id}`}><button className="transition duration-1000 ease-in  cursor-pointer bg-[#5f2d70de]  hover:bg-[#4d205c] font-ubuntu text-white font-bold py-2 px-4 rounded">
                                     Update
-                                </button>
+                                </button></Link>
                                 <button className="transition duration-1000 ease-in  cursor-pointer bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
                                     Delete
                                 </button>

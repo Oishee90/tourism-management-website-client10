@@ -16,6 +16,7 @@ import FirebaseProvider from './Components/FirebaseProvider/FirebaseProvider.jsx
 import ADDTouristSpot from './Pages/ADDTouristSpot.jsx';
 import MyList from './Pages/MyList.jsx';
 import AllTouristSpot from './Pages/AllTouristSpot.jsx';
+import Update from './Pages/Update.jsx';
 
 
 const router = createBrowserRouter([
@@ -47,6 +48,15 @@ const router = createBrowserRouter([
         element:<PrivateRoute>
          <MyList></MyList>
         </PrivateRoute>,
+       
+      },
+      {
+        path: "/update/:id",
+        element:
+        <PrivateRoute>
+      <Update></Update>
+      </PrivateRoute>
+       ,
        
       },
       {

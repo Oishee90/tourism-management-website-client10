@@ -44,12 +44,12 @@ const ADDTouristSpot = () => {
            <div className="join flex-col gap-2 md:w-1/2">
             <label className="font-raleway font-bold text-xl">Tourists Spot Name
 </label>
-  <input className="input input-bordered join-item w-full" name="tourists_spot_name" placeholder=" Enter Tourists Spot Name"/>
+  <input className="input input-bordered join-item w-full" type="text" name="tourists_spot_name" placeholder=" Enter Tourists Spot Name"/>
   
 </div>
 <div className="join  flex-col gap-2 md:w-1/2">
 <label className="font-raleway font-bold text-xl">Country Name</label>
-  <input className="input input-bordered join-item w-full" name="country_Name" placeholder="Enter Country Name"/>
+  <input className="input input-bordered join-item w-full" type="text" name="country_Name" placeholder="Enter Country Name"/>
   
 </div>
 
@@ -58,13 +58,13 @@ const ADDTouristSpot = () => {
            <div className="flex md:flex-row flex-col  gap-6 mt-5">
            <div className="join flex-col gap-2 md:w-1/2">
             <label className="font-raleway font-bold text-xl">Photo</label>
-  <input className="input input-bordered join-item w-full" name="image" placeholder="Enter image_url"/>
+  <input className="input input-bordered join-item w-full" type="text" name="image" placeholder="Enter image_url"/>
   
 </div>
 <div className="join flex-col gap-2 md:w-1/2">
 <label className="font-raleway font-bold text-xl">Location
 </label>
-  <input className="input input-bordered join-item w-full" name="location" placeholder=" Enter the location
+  <input className="input input-bordered join-item w-full" type="text" name="location" placeholder=" Enter the location
 "/>
   
 </div>
@@ -74,12 +74,12 @@ const ADDTouristSpot = () => {
            <div className="flex md:flex-row flex-col gap-6 mt-5 ">
            <div className="join flex-col gap-2 md:w-1/2">
             <label className="font-raleway font-bold text-xl">Seasonality</label>
-  <input className="input input-bordered join-item w-full" name="seasonality" placeholder="Enter Seasonal Information"/>
+  <input className="input input-bordered join-item w-full" type="text" name="seasonality" placeholder="Enter Seasonal Information"/>
   
 </div>
 <div className="join flex-col gap-2 md:w-1/2">
 <label className="font-raleway font-bold text-xl"> Travel time</label>
-  <input className="input input-bordered join-item w-full" name="travel_time" placeholder="Enter travel time"/>
+  <input className="input input-bordered join-item w-full" type="text" name="travel_time" placeholder="Enter travel time"/>
   
 </div>
 
@@ -89,12 +89,12 @@ const ADDTouristSpot = () => {
            <div className="join flex-col gap-2 md:w-1/2">
             <label className="font-raleway font-bold text-xl">Average Cost
 </label>
-  <input className="input input-bordered join-item w-full" name="average_cost" placeholder="Enter average cost"/>
+  <input className="input input-bordered join-item w-full" type="tell" name="average_cost" placeholder="Enter average cost"/>
   
 </div>
 <div className="join  flex-col gap-2 md:w-1/2">
 <label className="font-raleway font-bold text-xl"> Total Number of Visitors</label>
-  <input className="input input-bordered join-item w-full" name="totalVisitorsPerYear" placeholder="Enter Total Number of Visitors Annually"/>
+  <input className="input input-bordered join-item w-full" type="tell" name="totalVisitorsPerYear" placeholder="Enter Total Number of Visitors Annually"/>
   
 </div>
 
@@ -103,7 +103,7 @@ const ADDTouristSpot = () => {
          {/* description */}
            <div className="join flex-col gap-2  md:w-full mt-5">
             <label className="font-raleway font-bold text-xl">Description</label>
-  <textarea className="input input-bordered join-item  md:placeholder:pt-2 md:placeholder:pb-5"  name="short_description" placeholder="Enter Description"/>
+  <textarea className="input input-bordered join-item  md:placeholder:pt-2 md:placeholder:pb-5" type="text"  name="short_description" placeholder="Enter Description"/>
   
 </div>
  {/* user email */}
