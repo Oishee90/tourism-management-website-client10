@@ -18,7 +18,7 @@ const Banner = () => {
  
 
   return (
-    <div className="container mx-auto  relative mt-20" >
+    <div className="container mx-auto  relative mt-20 mb-20" >
       
   
   <Swiper   
