@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Swal from 'sweetalert2'
 
 
 const Update = () => {
@@ -36,7 +37,12 @@ const Update = () => {
         .then(res => res.json())
         .then(data => {
               if(data.modifiedCount > 0){
-                alert('data is updated')
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Update Successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                  })
               }
         })
     }
