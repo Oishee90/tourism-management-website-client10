@@ -11,12 +11,12 @@ import { MdAddCall, MdMarkEmailRead, MdOutlineAddLocationAlt   } from "react-ico
 const Footer = () => {
 
     return (
-        <div className="mt-10 container mx-auto "  >
+        <div className=" container mx-auto "  >
           
 
 <footer className="bg-gray-300 dark:bg-gray-900">
     <div className=" container mx-auto w-full max-w-screen-xl">
-   <div className="p-10 mt-7 m-5 flex gap-5 flex-col md:flex-row md:justify-between items-center">
+   <div className="p-10 flex gap-5 flex-col md:flex-row md:justify-between items-center">
     <div className="text-black font-raleway font-ubuntu font-extrabold">
   
    <h1 className="text-5xl text-black">Journey<span className="gap-9 text-[#D83F31]">SEA</span></h1>
