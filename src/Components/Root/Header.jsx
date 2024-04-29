@@ -24,7 +24,7 @@ const Header = () => {
 
     const navlinks = <>
     <li className={`font-raleway text-xs lg:text-lg ml-5 ${navbarClass} `}  id="sidebar"><NavLink to={"/"}>Home</NavLink></li>
-    <li className={`font-raleway text-xs lg:text-lg ml-5 ${navbarClass} `} id="sidebar"><NavLink to={"/about"}>All Tourists Spot</NavLink></li>
+    <li className={`font-raleway text-xs lg:text-lg ml-5 ${navbarClass} `} id="sidebar"><NavLink to={"/alltouristspot"}>All Tourists Spot</NavLink></li>
     <li className={`font-raleway text-xs lg:text-lg ml-5 ${navbarClass} `}id="sidebar" ><NavLink to={"/addtourist"}> Add Tourists Spot</NavLink></li>
    
     <li className={`font-raleway text-xs lg:text-lg ml-5" " ${navbarClass} `} id="sidebar"> <NavLink to={"/mylist"}>My List</NavLink></li>

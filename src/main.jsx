@@ -15,6 +15,7 @@ import Register from './Pages/Register.jsx';
 import FirebaseProvider from './Components/FirebaseProvider/FirebaseProvider.jsx';
 import ADDTouristSpot from './Pages/ADDTouristSpot.jsx';
 import MyList from './Pages/MyList.jsx';
+import AllTouristSpot from './Pages/AllTouristSpot.jsx';
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,13 @@ const router = createBrowserRouter([
         element:<PrivateRoute>
           <ADDTouristSpot></ADDTouristSpot>
         </PrivateRoute>,
+       
+      },
+      {
+        path: "/alltouristspot",
+        element:
+          <AllTouristSpot></AllTouristSpot>
+       ,
        
       },
       {

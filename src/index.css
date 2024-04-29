@@ -4,17 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 #sidebar a.active {
-  color: rgb(227, 183, 129);
+  color: #e3b781;
 border: 2px solid #86469C;
 background: none;
 }
 #sidebar a.active:hover{
   background-color: #86469C;
-  color:bisque;
+  color:#ffe4c4;
 }
 .font-ubuntu{
   font-family: "Ubuntu", sans-serif
 }
 .font-raleway{
   font-family: "Raleway", sans-serif;
+}
+.hover-zoom:hover {
+  transform: scale(1.05); /* You can adjust the scale factor as needed */
+  transition: transform 0.3s ease; /* Add a smooth transition for the zoom effect */
 }
