@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const AllTouristSpot = () => {
     const [alltouristSpots, setAlltouristSpot] = useState([])
@@ -44,6 +45,7 @@ const AllTouristSpot = () => {
     
     return (
         <div className="mt-20 container mx-auto">
+            <Helmet><title>Journey-AllSpot</title></Helmet>
              <div className="bg-[#faebd9] rounded-xl p-10 md:p-16">
             <h1 className="text-3xl font-bold text-center mb-8">Discover Amazing Tourist Spots</h1>
             <div className="flex justify-center mb-4">

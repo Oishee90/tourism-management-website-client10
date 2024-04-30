@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { useParams } from "react-router-dom";
-
+import { Helmet } from "react-helmet-async"
 
 const SpotDetails = () => {
     const {id} = useParams();
@@ -15,6 +15,7 @@ const SpotDetails = () => {
     },[id]);
     return (
         <div className="container mx-auto  mt-32">
+            <Helmet><title>Journey-SpotDetails</title></Helmet>
            <div className="grid grid-cols-1  lg:grid-cols-2 gap-8 mt-6 mb-20 container mx-auto"  >
   <div className="rounded-2xl relative h-full w-full ">
 

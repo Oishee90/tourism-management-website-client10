@@ -3,7 +3,7 @@ import Banner from "./Banner";
 import Clients from "./Clients";
 import Explore from "./Explore";
 import TouristSpot from "./TouristSpot";
-
+import { Helmet } from "react-helmet-async"
 
 const Home = () => {
     const [subcategories, setSubcategories] = useState([])
@@ -19,6 +19,7 @@ const Home = () => {
 
     return (
         <div className="container mx-auto">
+            <Helmet><title>Journey-Home</title></Helmet>
             <Banner></Banner>
             {/* tourist spot start */}
             <div className="mt-7 mb-7  ">

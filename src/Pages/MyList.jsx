@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import UseAuth from "../Components/hook/UseAuth";
 import { Link } from "react-router-dom";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+import { Helmet } from "react-helmet-async"
 
 const MyList = () => {
     const {user} = UseAuth() || {};
@@ -48,6 +49,7 @@ const MyList = () => {
  }
     return (
         <div className="container mx-auto mt-20 bg-[#faebd9] min-h-screen">
+            <Helmet><title>Journey-MyList</title></Helmet>
             <div className="font-ubuntu my-8 text-center space-y-6 mt-10 mb-10">
   <h1 className="text-2xl lg:text-4xl font-ubuntu font-extrabold p-10">Adventures in Your Bucket List</h1>
   

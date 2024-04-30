@@ -37,7 +37,7 @@ const ADDTouristSpot = () => {
     }
     return (
         <div className="container mx-auto mt-16">
-   
+   <Helmet><title>Journey-AddSpot</title></Helmet>
   
         
   

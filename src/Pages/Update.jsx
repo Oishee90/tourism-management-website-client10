@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Swal from 'sweetalert2'
-
+import { Helmet } from "react-helmet-async"
 
 const Update = () => {
     const {id} = useParams();
@@ -49,7 +49,7 @@ const Update = () => {
     return (
         <div className="container mx-auto mt-16">
    
-  
+   <Helmet><title>Journey-Update</title></Helmet>
         
   
         <div className="bg-[#faebd9] p-10 md:p-24">

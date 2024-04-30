@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import backgroundImage from '../assets/banner-3.jpg';
 import {FaEye, FaEyeSlash} from 'react-icons/fa';
-
 import { toast } from 'react-toastify';
 import { useForm } from "react-hook-form";
-
+import { Helmet } from "react-helmet-async"
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from "react";
@@ -57,7 +56,7 @@ const Register = () => {
   };
     return (
         <div className="mt-20">
-       
+       <Helmet><title>Journey-Register</title></Helmet>
             <div className="hero min-h-screen rounded-xl" style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})` ,
          backgroundSize: 'cover',
          backgroundPosition: 'center',  }}>

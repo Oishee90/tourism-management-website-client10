@@ -2,7 +2,7 @@
 import backgroundImage from '../assets/banner-1.jpg';
 import { Link } from "react-router-dom";
 import { FaEye,FaEyeSlash} from 'react-icons/fa';
-
+import { Helmet } from "react-helmet-async"
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -49,7 +49,7 @@ const Login = () => {
     return (
   
         <div className='mt-20'>
-        
+        <Helmet><title>Journey-Login</title></Helmet>
         <div className="hero min-h-screen rounded-xl" style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})` ,
      backgroundSize: 'cover',
      backgroundPosition: 'center',  }}>

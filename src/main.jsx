@@ -18,6 +18,7 @@ import MyList from './Pages/MyList.jsx';
 import AllTouristSpot from './Pages/AllTouristSpot.jsx';
 import Update from './Pages/Update.jsx';
 import SpotDetails from './Pages/SpotDetails.jsx';
+import { HelmetProvider } from 'react-helmet-async';
 
 
 const router = createBrowserRouter([
@@ -82,13 +83,13 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  
+    <HelmetProvider> 
   <FirebaseProvider>
 
   <RouterProvider router={router} />
   </FirebaseProvider>
    
-  
+  </HelmetProvider> 
  
   </React.StrictMode>,
 )
