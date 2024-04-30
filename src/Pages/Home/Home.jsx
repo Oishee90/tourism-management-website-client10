@@ -32,7 +32,7 @@ const Home = () => {
             <Helmet><title>Journey-Home</title></Helmet>
             <Banner></Banner>
 
-            <div className="mt-7 mb-7  ">
+            <div className="mt-20 mb-7  ">
             <div className="font-ubuntu my-8 text-center space-y-6">
   <h1 className="text-2xl lg:text-4xl font-ubuntu font-extrabold  ">Discover the Charm of Southeast Asia</h1>
   <p className="text-base">From the serene landscapes of lush greenery to bustling cityscapes adorned with vibrant culture, each destination promises a unique experience. Explore the hidden gems of Bangladesh, Thailand, Indonesia, Malaysia, Vietnam, and Cambodia as you uncover their rich history, stunning natural wonders, and mouth-watering cuisine.
@@ -52,7 +52,7 @@ const Home = () => {
             </div>
             <Explore></Explore>
             {/* tourist spot start */}
-            <div className="mt-10 mb-7  ">
+            <div className="mt-24 mb-7  ">
             <div className="font-ubuntu my-8 text-center space-y-6">
   <h1 className="text-2xl lg:text-4xl font-ubuntu font-extrabold  ">Discover Unforgettable Destinations  </h1>
   <p className="text-base">From breathtaking natural wonders to vibrant cultural hotspots, immerse yourself in the beauty and diversity of the worlds most captivating locations.

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import UseAuth from "../Components/hook/UseAuth";
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
-import { Helmet } from "react-helmet-async"
+import { Helmet } from "react-helmet-async";
 
 const MyList = () => {
     const {user} = UseAuth() || {};
