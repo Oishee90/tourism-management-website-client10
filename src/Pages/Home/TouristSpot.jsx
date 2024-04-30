@@ -9,6 +9,7 @@ const TouristSpot = ({categorie}) => {
        
  <>
    <div className="card   bg-purple-100 text-black hover:bg-white shadow-lg borde hover:text-black border-blue-100 hover:border-purple-700 hover:transition hover:duration-1000 ease-in  cursor-pointer hover:shadow-2xl">
+  
   <figure className="h-full"><img className="transition-transform transform hover:transition hover:duration-1000 ease-in  cursor-pointer hover:scale-110 h-full" src={categorie.image} alt="Shoes" /></figure>
  
   <div className="card-body">

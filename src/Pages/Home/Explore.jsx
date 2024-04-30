@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Explore = () => {
     return (
-        <div className="mt-7 mb-7 container mx-auto ">
+        <div className="mt-10 mb-7 container mx-auto ">
            <div className="font-ubuntu my-8 text-center space-y-6">
   <h1 className="text-2xl lg:text-4xl font-ubuntu font-extrabold ">Explore Boundless Possibilities</h1>
   <p className="text-base">With JourneySEA, every adventure is an opportunity to explore, discover, and create unforgettable memories.

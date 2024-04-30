@@ -98,7 +98,7 @@ const Header = () => {
      
       </ul>
     </div> */}
-    <div onClick={logOut}  className="btn font-raleway bg-[#FC4100] text-xs md:text-xl text-bold  text-white ">{}LogOut</div>
+    <div onClick={logOut}  className="btn font-raleway bg-[#FC4100] text-xs md:text-base text-medium  text-white ">{}LogOut</div>
      
      </div>
      
