@@ -83,14 +83,8 @@ const Header = () => {
        
       </ul>
     </div>
-    {/* <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar hover:tooltip hover:tooltip-open hover:tooltip-bottom" data-tip={user?.displayName||'user name not found'}>
-        <div className="w-15 rounded-full">
-          <img src={user?.photoURL || "https://i.ibb.co/BcWRPHQ/derek-lee-93-L-Ph-OWPk-Y-unsplash.jpg"} />
-       
-        </div>
-       
-      </div> */}
-     <div className="dropdown dropdown-end ml-2">
+    <div className="dropdown dropdown-end ml-2">
+     {/* 
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
           <button className="h-full w-full">
@@ -103,7 +97,11 @@ const Header = () => {
       
      
       </ul>
-    </div>
+    </div> */}
+    <div onClick={logOut}  className="btn font-raleway bg-[#FC4100] text-xs md:text-xl text-bold  text-white ">{}LogOut</div>
+     
+     </div>
+     
       </div>:
     
   <div className="dropdown dropdown-end ml-2">
