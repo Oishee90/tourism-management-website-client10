@@ -8,7 +8,7 @@ const MyList = () => {
     const [items,setItem]=useState([])
     const [control,setControl]=useState(false)
     useEffect(() => {
-        fetch(` https://tourism-management-website-server.vercel.app//myList/${user?.email}`)
+        fetch(` https://tourism-management-website-server.vercel.app/myList/${user?.email}`)
         .then(res => res.json())
         .then(data => {
             setItem(data)
