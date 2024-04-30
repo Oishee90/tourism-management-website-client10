@@ -9,7 +9,7 @@ const Home = () => {
     const [subcategories, setSubcategories] = useState([])
     const categories = subcategories.slice(0,6)
     useEffect(()=>{
-        fetch("http://localhost:4000/alltouristspot")
+        fetch(" https://tourism-management-website-server.vercel.app/alltouristspot")
         .then(res => res.json())
         .then(data => {
             setSubcategories(data)
@@ -23,7 +23,7 @@ const Home = () => {
             {/* tourist spot start */}
             <div className="mt-7 mb-7  ">
             <div className="font-ubuntu my-8 text-center space-y-6">
-  <h1 className="text-2xl lg:text-4xl font-ubuntu font-extrabold  ">Discover Unforgettable Destinations {categories.length} </h1>
+  <h1 className="text-2xl lg:text-4xl font-ubuntu font-extrabold  ">Discover Unforgettable Destinations  </h1>
   <p className="text-base">From breathtaking natural wonders to vibrant cultural hotspots, immerse yourself in the beauty and diversity of the worlds most captivating locations.
 
   </p>

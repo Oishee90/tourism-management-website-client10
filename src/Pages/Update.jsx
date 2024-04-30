@@ -8,7 +8,7 @@ const Update = () => {
     console.log(id)
     const [product, setProduct] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:4000/singleProduct/${id}`)
+        fetch(` https://tourism-management-website-server.vercel.app/singleProduct/${id}`)
         .then(res => res.json())
         .then(data => {
             setProduct(data)
@@ -29,7 +29,7 @@ const Update = () => {
         const info = {tourists_spot_name,country_Name,image,location,seasonality,travel_time,average_cost,totalVisitorsPerYear,short_description}
 
         console.log(info)
-        fetch(`http://localhost:4000/update/${id}`,{
+        fetch(` https://tourism-management-website-server.vercel.app//update/${id}`,{
             method:"PUT",
             headers: {"Content-type" : "application/json"},
             body:JSON.stringify(info)
